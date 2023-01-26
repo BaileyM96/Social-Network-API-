@@ -1,6 +1,5 @@
 const express = require('express');
-//Create db file with config
-const db = require('');
+const db = require('./config/connection');
 //create routes file
 const routes = require('');
 
