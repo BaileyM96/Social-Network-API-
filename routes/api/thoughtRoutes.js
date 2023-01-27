@@ -8,6 +8,7 @@ const {
     deleteThought,
     createReaction,
     deleteReaction
+    //Need controllers so I can import them to this page
 } = require();
 // /api/getAllThoughts and get thought and create a thought
 router.route('/').get(getThought).post(createThought);

@@ -1,9 +1,8 @@
 const express = require('express');
 const db = require('./config/connection');
-//create routes file
-const routes = require('');
+const routes = require('./routes');
 
-const PORT = 3001;
+const PORT = process.env.PORT || 3001;
 const app = express();
 
 app.use(express.urlencoded({ extended: true }));
@@ -16,3 +15,4 @@ db.once('open', () => {
         console.log(`Server started on port ${PORT}!`);
     });
 });
+

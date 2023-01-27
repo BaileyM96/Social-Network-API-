@@ -1,7 +1,7 @@
 const { connect, connection } = require('mongoose');
 
 //Check back to later
-connect('mongodb://localhost/user', {
+connect('mongodb://localhost:27017/socialDB', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 });
