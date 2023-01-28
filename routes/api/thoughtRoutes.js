@@ -9,7 +9,7 @@ const {
     createReaction,
     deleteReaction
     //Need controllers so I can import them to this page
-} = require();
+} = require('../../controllers/thoughtController');
 // /api/getAllThoughts and get thought and create a thought
 router.route('/').get(getThought).post(createThought);
 
